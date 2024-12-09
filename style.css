@@ -1,0 +1,326 @@
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: "Outfit", sans-serif;
+}
+
+.container {
+    height: 100vh;
+    /* 1 vh=19.2px */
+    width: 100%;
+    position: relative;
+    background-color: white;
+}
+
+.navbar {
+    display: flex;
+    width: 85%;
+    justify-content: space-between;
+    margin-left: 100px;
+    align-items: center;
+}
+
+#logo {
+    width: 130px;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    left: 1150px;
+}
+
+.li {
+    margin: 5px 10px;
+    display: inline-block;
+}
+
+.links {
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+.links:hover {
+    color: red;
+}
+
+#lastname {
+    color: orange;
+}
+
+.title {
+    margin-top: 10%;
+    margin-left: 10%;
+}
+
+.title_h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.download {
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    padding: 10px 30px;
+    margin-top: 25px;
+    display: inline-block;
+    border-radius: 5px;
+}
+
+.download:hover {
+    background-color: orange;
+}
+
+.sec_container {
+    display: flex;
+}
+
+.image {
+    width: 45%;
+    height: 85%;
+    position: absolute;
+    right: 30px;
+    bottom: 0px;
+}
+
+.imageGroup {
+    height: 100%;
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: bottom 1s, left 2s;
+}
+
+.image:hover #girl {
+    left: 40%;
+}
+
+.image:hover #shape {
+    bottom: 40px;
+}
+
+#about {
+    margin: 20% 8% 0% 8%;
+    text-align: center;
+}
+
+.heading h2 {
+    font-size: 35px;
+}
+
+.heading span {
+    color: green;
+    font-size: 20px;
+}
+
+.about_content {
+    margin: 100px;
+    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* 1 f r= 225px */
+    column-gap: 2rem;
+    /* 1 rem = 16px */
+    margin-top: 3rem;
+}
+
+.about_details {
+    margin: 15px;
+    text-align: left;
+}
+
+.about_para {
+    text-align: justify;
+    font-size: 20px;
+}
+
+.about_info {
+    margin-top: 20px;
+}
+
+.info_details {
+    margin-right: 5px;
+    padding: 10px;
+    display: flex;
+    gap: 15px;
+}
+
+#skills {
+    margin: 5% 8% 0% 8%;
+    text-align: center;
+}
+
+.my_skills h2 {
+    font-size: 35px;
+}
+
+.my_skills span {
+    color: green;
+    font-size: 20px;
+}
+
+.skill_container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 2rem;
+    margin-top: 2.5rem;
+}
+
+.progress_container {
+    margin-top: 80px;
+    text-align: left;
+}
+
+.progress_bar {
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+}
+
+.bar {
+    height: 8px;
+    width: 100%;
+    background-color: yellow;
+}
+
+.html_bar {
+    background-color: red;
+    width: 90%;
+    height: 100%;
+}
+
+.per {
+    margin-left: 95%;
+    position: relative;
+    top: -20px;
+}
+
+.bar1 {
+    height: 8px;
+    width: 100%;
+    background-color: yellow;
+}
+
+.html_bar1 {
+    background-color: red;
+    width: 80%;
+    height: 100%;
+}
+
+.bar2 {
+    height: 8px;
+    width: 100%;
+    background-color: yellow;
+}
+
+.html_bar2 {
+    background-color: red;
+    width: 75%;
+    height: 100%;
+}
+
+.bar3 {
+    height: 8px;
+    width: 100%;
+    background-color: yellow;
+}
+
+.html_bar3 {
+    background-color: red;
+    width: 70%;
+    height: 100%;
+}
+
+#contact {
+    margin: 5% 8% 0% 8%;
+    text-align: center;
+}
+
+.my_contacts h2 {
+    font-size: 35px;
+}
+
+.my_contacts span {
+    color: green;
+    font-size: 20px;
+}
+
+.icon,
+.up_arrow {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon_set {
+    display: flex;
+    /* to align block items in same line */
+    justify-content: center;
+    gap: 40px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding-bottom: 20px;
+}
+
+.icon .fa-brands {
+    transition: all .4s ease;
+}
+
+.icon .fa-brands:hover {
+    transform: scale(1.1);
+}
+
+#footer {
+    text-align: center;
+    padding-bottom: 30px;
+    font-weight: 500;
+}
+
+.icon:hover {
+    background-image: linear-gradient(to bottom right, yellow, red);
+    border-radius: 50%;
+}
+
+.icon:hover i {
+    color: white;
+    animation: shake 0.7s;
+}
+
+@keyframes shake {
+    10% {
+        transform: rotate(15deg);
+    }
+
+    20% {
+        transform: rotate(-15deg);
+    }
+
+    30% {
+        transform: rotate(15deg);
+    }
+
+    40% {
+        transform: rotate(-15deg);
+    }
+}
+
+.up_arrow {
+    background-image: linear-gradient(to bottom right, yellow, red);
+    float: right;
+    margin: 20px;
+    border-radius: 50%;
+}
+
+.up_arrow:hover i {
+    color: white;
+    animation: shake 0.7s;
+}
