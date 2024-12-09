@@ -44,6 +44,7 @@ ul {
 .links {
     text-decoration: none;
     font-weight: bolder;
+    color: black;
 }
 
 .links:hover {
